@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr = [1,2,3,4,5,6,7,8,9,1,1,1,4,6,1,5,7,3,7,2,6,7,4,2,7,3,1]
+  let dem =0;
+  let a = window.parseInt(prompt("nhập vào số a"))
+  for (let i = 0; i < arr.length; i++){
+      if (arr[i]===a){
+      dem += 1
+      }
+  }
+  if (dem){
+      document.write("a có phần tử thuộc n là" + dem)
+  } else{
+      document.write("a ko có phần tử thuộc n")
+
+  }
+</script>
+</body>
+</html>

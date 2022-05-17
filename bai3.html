@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+ let arr = [1,2,3,4,5,6,7,8,9,11,13,15,17]
+ let count = 0;
+ let countSNT = 0
+ let total=0
+ for (let n=0;n<arr.length;n++) {
+     if (countSNT < arr.length) {
+         for (let j = 1; j <= arr[n]; j++) {
+             if (arr[n] % j === 0) {
+                 count += 1;
+             }
+         }
+         if (count === 2) {
+             total+= arr[n]
+             }
+             countSNT += 1
+         }
+         count=0
+
+
+ }
+document.write(total)
+</script>
+</body>
+</html>
